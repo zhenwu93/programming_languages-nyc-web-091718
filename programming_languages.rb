@@ -3,15 +3,15 @@ def reformat_languages(languages_hash)
 
   languages_hash.each do |language_category, languages|
     languages.each do |language, attributes|
-      attributes.each do |attribute, value|
+      attributes.each do |attribute, att_value|
         if language == :javascript
           new_hash[language] == {
-            :type => value,
+            :type => att_value,
             :style => [:oo, :functional]
           }
         else
           new_hash[language] = {
-            :type => value,
+            :type => att_value,
             :style => [language_category]
           }
         end
