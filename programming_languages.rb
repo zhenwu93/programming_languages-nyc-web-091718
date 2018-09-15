@@ -1,17 +1,7 @@
-def reformat_languages(languages)
+def reformat_languages(languages_hash)
   new_hash = {}
-  languages.each do |diff_languages, languages|
-    languages.each do |languages, language|
-      language.each do |key, value|
-        new_hash[diff_languages] = {
-          language = {language:value}
-        }
 
-        if languages[:diff_languages] == :oo
-        elsif languages[:diff_languages] == :functional
-        else puts "invalid"
-        end
-      end
-    end
-  end
+  languages_hash.each do |language_category, languages|
+    languages.each do |language_type, language|
+      if language ==
 end
