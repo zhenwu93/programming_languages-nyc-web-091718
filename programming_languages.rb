@@ -9,7 +9,7 @@ def reformat_languages(languages_hash)
             :type => value,
             :style => [:oo, :functional]
           }
-        else 
+        else
           new_hash[language] = {
             :type => value,
             :style => [language_category]
